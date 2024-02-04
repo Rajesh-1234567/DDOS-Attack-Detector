@@ -18,6 +18,7 @@ def details():
 
 @app.route('/predict', methods=['POST'])
 def predict():
+    print("Server got hit")
     int_features = [float(x) for x in request.form.values()]
     final_features = [np.array(int_features)]
     tcp_pred = tcp.predict(final_features)[0]
