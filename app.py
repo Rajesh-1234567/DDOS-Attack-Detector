@@ -29,7 +29,7 @@ def predict():
     print("Server got request.")
     output = "Attack possible" if prediction == 1 else "No attacks"
 
-    return render_template('index.html', prediction_text='Prediction: {}'.format(output),
+    return render_template('home.html', prediction_text='Prediction: {}'.format(output),
                            tcp_text=tcp_pred, udp_text=udp_pred, icmp_text=icmp_pred)
 
 if __name__ == "__main__":
