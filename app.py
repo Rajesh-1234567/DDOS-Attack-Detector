@@ -10,11 +10,11 @@ app.static_folder = 'static'
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/details')
 def details():
-    return render_template('home.html')
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -25,6 +25,7 @@ def predict():
     icmp_pred = icmp.predict(final_features)[0]
 
     prediction = (tcp_pred or udp_pred or icmp_pred)
+    print("Server got request.")
     output = "Attack possible" if prediction == 1 else "No attacks"
 
     return render_template('index.html', prediction_text='Prediction: {}'.format(output),
