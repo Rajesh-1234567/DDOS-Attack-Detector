@@ -2,6 +2,6 @@ flask
 pandas
 numpy
 scikit-learn
-request
+requests
 pickle
 gunicron
