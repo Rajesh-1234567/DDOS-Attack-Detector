@@ -1,6 +1,6 @@
 
 # DDoS Attack Detection Model
-#  (Cyber security and Machine learning Model)
+#  (Cyber security and Machine learning )
 
 ## Problem Statement
 
