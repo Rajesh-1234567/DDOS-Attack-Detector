@@ -14,7 +14,7 @@ def home():
 
 @app.route('/details')
 def details():
-    return render_template('index.html')
+    return render_template('home.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
