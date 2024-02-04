@@ -1,9 +1,6 @@
-Sure, here's a draft for your README.md file:
-
----
 
 # DDoS Attack Detection Model
-#(Cyber security and Machine learning Model)
+#  (Cyber security and Machine learning Model)
 
 ## Problem Statement
 
