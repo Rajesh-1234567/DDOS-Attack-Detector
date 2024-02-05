@@ -112,24 +112,24 @@
             <h1>DDOS PREDICTION</h1>
             <!-- Main Input For Receiving Query to our ML -->
             <form action="{{ url_for('predict')}}" method="post">
-                <input type="text" name="dt" placeholder="dt" required="required" />
-                <input type="text" name="switch" placeholder="switch count" required="required" />
-                <input type="text" name="pktcount" placeholder="pktcount" required="required" />
-                <input type="text" name="bytecount" placeholder="bytecount" required="required" />
-                <input type="text" name="dur" placeholder="dur" required="required" />
-                <input type="text" name="dur_nsec" placeholder="dur_nsec" required="required" />
-                <input type="text" name="tot_dur" placeholder="tot_dur" required="required" />
-                <input type="text" name="flows" placeholder="flows" required="required" />
-                <input type="text" name="packetins" placeholder="packetins" required="required" />
-                <input type="text" name="pktperflow" placeholder="pktperflow" required="required" />
-                <input type="text" name="byteperflow" placeholder="byteperflow" required="required" />
-                <input type="text" name="pktrate" placeholder="pktrate" required="required" />
-                <input type="text" name="Pairflow" placeholder="Pairflow" required="required" />
-                <input type="text" name="tx_bytes" placeholder="tx_bytes" required="required" />
-                <input type="text" name="rx_bytes" placeholder="rx_bytes" required="required" />
-                <input type="text" name="tx_kbps" placeholder="tx_kbps" required="required" />
-                <input type="text" name="rx_kbps" placeholder="rx_kbps" required="required" />
-                <input type="text" name="tot_kbps" placeholder="tot_kbps" required="required" />
+                <input type="text" name="dt" placeholder="Enter Destination identifier" required="required" />
+                <input type="text" name="switch" placeholder="Enter Network Switch identifier" required="required" />
+                <input type="text" name="pktcount" placeholder="Enter Packet Count" required="required" />
+                <input type="text" name="bytecount" placeholder="Enter Byte Count" required="required" />
+                <input type="text" name="dur" placeholder="Enter Duration" required="required" />
+                <input type="text" name="dur_nsec" placeholder="Enter Duration in Nanoseconds" required="required" />
+                <input type="text" name="tot_dur" placeholder="Enter Total Duration" required="required" />
+                <input type="text" name="flows" placeholder="Enter Number of Flows" required="required" />
+                <input type="text" name="packetins" placeholder="Enter Packet Inspections" required="required" />
+                <input type="text" name="pktperflow" placeholder="Enter Packets per Flow" required="required" />
+                <input type="text" name="byteperflow" placeholder="Enter byteperflow" required="required" />
+                <input type="text" name="pktrate" placeholder="Enter packet rate" required="required" />
+                <input type="text" name="Pairflow" placeholder="Enter Pairflows" required="required" />
+                <input type="text" name="tx_bytes" placeholder="Enter Transmitted Bytes" required="required" />
+                <input type="text" name="rx_bytes" placeholder="Enter Received Bytes" required="required" />
+                <input type="text" name="tx_kbps" placeholder="Enter Transmission Rate in Kilobits per Second" required="required" />
+                <input type="text" name="rx_kbps" placeholder="Enter Reception Rate in Kilobits per Second" required="required" />
+                <input type="text" name="tot_kbps" placeholder="Enter Total Throughput in Kilobits per Second" required="required" />
 
                 <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
             </form>
