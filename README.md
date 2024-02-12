@@ -31,6 +31,7 @@ We utilized various machine learning algorithms including K-Nearest Neighbors (K
 - **Scikit-learn**: Machine learning library for model development and evaluation.
 - **HTML**, **CSS**: Frontend technologies for building the user interface.
 - **GitHub** and **Render**: Platforms used for version control and deployment, respectively.
+  
 
 ## Project Workflow
 
